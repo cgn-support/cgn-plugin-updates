@@ -1,0 +1,14 @@
+{
+  "name": "CGN YouTube Playlists",
+  "slug": "cgn-youtube-playlists",
+  "version": "0.5.0",
+  "download_url": "https://cgn-support.github.io/cgn-plugin-updates/cgn-youtube-playlists/cgn-youtube-playlists-0.5.0.zip",
+  "author": "Contractor Growth Network",
+  "requires": "6.2",
+  "requires_php": "7.4",
+  "last_updated": "2026-10-02 04:34:33",
+  "sections": {
+    "description": "Elementor widget that shows a YouTube channel&#x27;s playlists as tabs in a grid, carousel or featured-player layout. New videos appear automatically.",
+    "changelog": "<h4>0.5.0</h4>\n<ul>\n<li>Updates are only offered while the site&#x27;s YouTube API key works. The Plugins screen shows why when they&#x27;re paused.</li>\n<li>The API key status now keeps itself current from the daily video refresh, so a deleted or blocked key is noticed automatically.</li>\n</ul>\n<h4>0.4.0</h4>\n<ul>\n<li>Automatic updates: new versions now appear on the Plugins screen like any other plugin.</li>\n</ul>\n<h4>0.3.2</h4>\n<ul>\n<li>Style controls for the &quot;Load more&quot; button: alignment, spacing, typography, colors (normal and hover), border and padding.</li>\n</ul>\n<h4>0.3.1</h4>\n<ul>\n<li>Fixed the Playlists panel going blank in the Elementor editor.</li>\n<li>Removed the widget header (eyebrow and heading).</li>\n</ul>\n<h4>0.3.0</h4>\n<ul>\n<li>Elementor widget with grid, carousel and featured-player layouts.</li>\n<li>Playlist toggles with drag-to-reorder in the editor.</li>\n</ul>\n<h4>0.2.0</h4>\n<ul>\n<li>YouTube data layer with a daily cache and last-good-copy backup.</li>\n<li>API key status display and &quot;Test a channel&quot; tool on the settings screen.</li>\n</ul>\n<h4>0.1.0</h4>\n<ul>\n<li>Plugin scaffold, settings screen and VideoObject structured data.</li>\n</ul>"
+  }
+}
