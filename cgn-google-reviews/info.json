@@ -1,0 +1,14 @@
+{
+  "name": "CGN Google Reviews",
+  "slug": "cgn-google-reviews",
+  "version": "0.1.0",
+  "download_url": "https://cgn-support.github.io/cgn-plugin-updates/cgn-google-reviews/cgn-google-reviews-0.1.0.zip",
+  "author": "Contractor Growth Network",
+  "requires": "6.2",
+  "requires_php": "7.4",
+  "last_updated": "2026-10-08 14:41:23",
+  "sections": {
+    "description": "Keeps the site&#x27;s Google Business Profile reviews as WordPress posts, filtered and formatted, so an Elementor loop can show them in any design. A scheduled CGN job sends the reviews.",
+    "changelog": "<h4>0.1.0</h4>\n<ul>\n<li>Reviews post type that holds the site&#x27;s Google reviews, synced by CGN&#x27;s scheduled job through a secure REST endpoint.</li>\n<li>Rules on Reviews \u2192 Settings: minimum rating, text required, how many to show, newest first. Reviews that don&#x27;t qualify stay as drafts.</li>\n<li>Reviewer names as &quot;First L.&quot; by default, review dates in a chosen format, and the owner&#x27;s reply with a label.</li>\n<li>Every field works with Elementor&#x27;s Post Custom Field dynamic tag, plus a [cgn_review] shortcode for the reply.</li>\n</ul>"
+  }
+}
