@@ -1,14 +1,14 @@
 {
   "name": "CGN Google Reviews",
   "slug": "cgn-google-reviews",
-  "version": "0.2.0",
-  "download_url": "https://cgn-support.github.io/cgn-plugin-updates/cgn-google-reviews/cgn-google-reviews-0.2.0.zip",
+  "version": "0.3.0",
+  "download_url": "https://cgn-support.github.io/cgn-plugin-updates/cgn-google-reviews/cgn-google-reviews-0.3.0.zip",
   "author": "Contractor Growth Network",
   "requires": "6.2",
   "requires_php": "7.4",
-  "last_updated": "2026-10-09 12:10:47",
+  "last_updated": "2026-11-17 16:27:54",
   "sections": {
     "description": "Keeps the site&#x27;s Google Business Profile reviews as WordPress posts, filtered and formatted, so an Elementor loop can show them in any design. A scheduled CGN job sends the reviews.",
-    "changelog": "<h4>0.2.0</h4>\n<ul>\n<li>Owner replies are no longer stored or shown. The reply field, the reply shortcode and the reply label setting are gone, and replies saved by 0.1.0 are cleared at the next sync.</li>\n</ul>\n<h4>0.1.0</h4>\n<ul>\n<li>Reviews post type that holds the site&#x27;s Google reviews, synced by CGN&#x27;s scheduled job through a secure REST endpoint.</li>\n<li>Rules on Reviews \u2192 Settings: minimum rating, text required, how many to show, newest first. Reviews that don&#x27;t qualify stay as drafts.</li>\n<li>Reviewer names as &quot;First L.&quot; by default, review dates in a chosen format, and the owner&#x27;s reply with a label.</li>\n<li>Every field works with Elementor&#x27;s Post Custom Field dynamic tag, plus a [cgn_review] shortcode for the reply.</li>\n</ul>"
+    "changelog": "<h4>0.3.0</h4>\n<ul>\n<li>An incomplete fetch from Google can no longer wipe reviews: a sync that would remove more than 20% of the site&#x27;s reviews is refused and changes nothing, unless the job sends &quot;force&quot;: true.</li>\n<li>Reviews a sync removed come back on their own when Google lists them again. Reviews someone trashed by hand still stay trashed, and the list shows which is which. (Reviews a 0.2.0 sync removed can&#x27;t be told apart from hand-trashed ones, so they stay in the Trash. Restore them by hand if needed.)</li>\n<li>Administrators see a warning on the Dashboard and Reviews screens when reviews haven&#x27;t synced in 8 days (the sync runs weekly) or a sync was refused. The status endpoint reports &quot;health&quot; (ok, stale or never) for monitoring.</li>\n<li>Reviews are read-only in WordPress: no Edit screen or Quick Edit, just Trash, plus a note that they&#x27;re a copy of the Google Business Profile.</li>\n<li>Trashing or restoring a review by hand re-applies the rules straight away, so a review limit fills back up without waiting for the next sync.</li>\n</ul>\n<h4>0.2.0</h4>\n<ul>\n<li>Owner replies are no longer stored or shown. The reply field, the reply shortcode and the reply label setting are gone, and replies saved by 0.1.0 are cleared at the next sync.</li>\n</ul>\n<h4>0.1.0</h4>\n<ul>\n<li>Reviews post type that holds the site&#x27;s Google reviews, synced by CGN&#x27;s scheduled job through a secure REST endpoint.</li>\n<li>Rules on Reviews \u2192 Settings: minimum rating, text required, how many to show, newest first. Reviews that don&#x27;t qualify stay as drafts.</li>\n<li>Reviewer names as &quot;First L.&quot; by default, review dates in a chosen format, and the owner&#x27;s reply with a label.</li>\n<li>Every field works with Elementor&#x27;s Post Custom Field dynamic tag, plus a [cgn_review] shortcode for the reply.</li>\n</ul>"
   }
 }
